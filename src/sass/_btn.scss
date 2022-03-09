@@ -1,0 +1,29 @@
+.btn {
+  width: 100%;
+  height: 5rem;
+  background-color: transparent;
+  border-radius: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+}
+
+.btn--proceed {
+  color: $Pale-blue;
+  background: $Bright-blue;
+  border: none;
+}
+
+.btn--proceed:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+
+.btn--cancel {
+  color: $Desaturated-blue;
+  border: none;
+}
+
+.btn--cancel:hover {
+  color: $Dark-blue;
+  cursor: pointer;
+}

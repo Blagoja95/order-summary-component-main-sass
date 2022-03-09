@@ -1,0 +1,133 @@
+$font-size: 1.6rem;
+$component-width: 33rem;
+$component-upper-height: 18rem;
+$component-inner-height: 42rem;
+$component-height: $component-inner-height + $component-upper-height;
+$border-radius: 2rem;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: $font-size;
+  background: $Pale-blue url("../images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-weight: 500;
+  color: $Desaturated-blue;
+}
+
+%flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title,
+.paragraph {
+  width: 100%;
+  text-align: center;
+}
+
+.container {
+  @extend %flexbox;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.component {
+  margin-top: 10rem;
+  width: $component-width;
+  max-height: $component-height;
+  border-radius: $border-radius;
+}
+
+.component-image {
+  background-image: url("../images/illustration-hero.svg");
+  width: 100%;
+  height: $component-upper-height;
+  background-position: center;
+  border-radius: $border-radius $border-radius 0 0;
+}
+
+.component-outer {
+  height: $component-inner-height;
+  background: $White;
+  border-radius: 0 0 $border-radius $border-radius;
+}
+
+.component-inner {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.main-title {
+  color: $Dark-blue;
+  font-weight: 900;
+}
+
+.order-msg {
+  line-height: 2;
+  width: 25ch;
+}
+
+.link:link,
+.link:visited {
+  text-decoration: none;
+  color: darkblue;
+}
+
+.link:hover {
+  text-decoration: underline;
+  opacity: 80%;
+}
+
+// @media (max-width: 350px) {
+//   html {
+//     font-size: 10%;
+//   }
+// }
+
+// @media only screen and (min-width: 1000px) {
+//   .component {
+//     width: 45rem;
+//   }
+//   .component-image {
+//     height: 22rem;
+//   }
+
+//   // .component-outer {
+//   //   height: $component-inner-height;
+//   // }
+
+//   .component-outer {
+//     width: 45rem;
+//   }
+// } ;
+
+@media screen and (min-width: 900px) {
+  // $component-width: 45rem !global;
+  .component {
+    width: 45rem;
+  }
+
+  .order-msg {
+    width: 30ch;
+  }
+
+  .main-title {
+    padding-top: 1rem;
+    font-size: 3.2rem;
+  }
+}

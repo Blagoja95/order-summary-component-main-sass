@@ -1,0 +1,24 @@
+{
+  "name": "order-summary-component-main",
+  "version": "1.0.0",
+  "description": "practicing package control and learning sass",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Blagoja95/order-summary-component-main-sass.git"
+  },
+  "author": "boka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Blagoja95/order-summary-component-main-sass/issues"
+  },
+  "homepage": "https://github.com/Blagoja95/order-summary-component-main-sass#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.3.2",
+    "parcel": "^2.3.2",
+    "sass": "^1.49.9"
+  }
+}
